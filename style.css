@@ -1,0 +1,91 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+header {
+  background-image: url(./Images/Header-Image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 10, 10, 0.3);
+}
+nav {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 60px 0 60px;
+}
+nav li {
+  display: inline-block;
+  list-style: none;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 3px;
+}
+nav li span {
+  padding-left: 5px;
+}
+nav li a {
+  background-color: #fff;
+  padding: 5px;
+  text-decoration: none;
+}
+.cart ion-icon {
+  padding-right: 5px;
+}
+.cart a {
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  padding-bottom: 100px;
+}
+.image {
+  margin-right: 20px;
+  margin-left: 20px;
+  position: relative;
+}
+.image img {
+  width: 150px;
+  height: 210px;
+  cursor: pointer;
+}
+.add-cart {
+  position: absolute;
+  width: 100%;
+  background-color: darkgray;
+  opacity: 0;
+  cursor: pointer;
+  text-align: center;
+  transition:  0.3s ease-in-out;
+}
+.image:hover .car1,
+.image:hover .car2,
+.image:hover .car3,
+.image:hover .car4
+ {
+  opacity: 1;
+  padding: 10px;
+  text-decoration: none;
+  bottom: 50px;
+}
